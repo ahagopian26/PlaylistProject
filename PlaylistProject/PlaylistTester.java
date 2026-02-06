@@ -41,3 +41,8 @@ public class PlaylistTester {
         p.printSongs();
     }
 }
+
+        System.out.println("Printing all songs...\n");
+        p.printSongs();
+    }
+}
