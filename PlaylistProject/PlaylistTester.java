@@ -1,10 +1,10 @@
 public class PlaylistTester {
     public static void main(String[] args) {
 
+        System.out.println("Initializing a Playlist...\n");
         Playlist p = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
-
         p.addSong(new Song("This Must Be the Place", "Talking Heads", 296));
         p.addSong(new Song("Dominoes", "Donald Byrd", 273));
         p.addSong(new Song("Check the Rhime", "A Tribe Called Quest", 216));
@@ -34,13 +34,8 @@ public class PlaylistTester {
         System.out.println("\nPrinting the total duration of all songs...");
         System.out.println(p.totalDuration());
 
-        System.out.println("\n\nRemoving all unliked songs at once...\n");
+        System.out.println("\nRemoving all unliked songs at once...\n");
         p.removeUnliked();
-
-        System.out.println("Printing all songs...\n");
-        p.printSongs();
-    }
-}
 
         System.out.println("Printing all songs...\n");
         p.printSongs();
